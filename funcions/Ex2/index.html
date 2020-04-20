@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcions - Exemple 2</title>
+    <!-- No podem cridar al scrip aquí perquè els elements que cridem
+    des del codi JS ("paragraf") encara no existeixen -->
+</head>
+<body>
+    <h1>innerHTML =</h1>
+    <p id="paragraf"></p>
+    <code><em>Cada cop que cridem la funció, es SOBREESCRIU el text del paràgraf</em></code>
+
+    <h1>innerHTML +=</h1>
+    <p id="paragraf2"></p>
+    <code><em>Cada cop que cridem la funció, es SOBREESCRIU el text del paràgraf</em></code>
+
+
+
+    <script src="./js/ex2.js"></script>
+    <!-- Hem de cridar al script després del codi, perquè si 
+        cridem al script en el <head> el id="paragraf" encara no existeix -->
+</body>
+</html>
