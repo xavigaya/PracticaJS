@@ -1,7 +1,9 @@
+// recordeu que hem dit que ja no declarem les variables amb var, ho fem amb let
 let missatge;
 let i = 0;
 
 function hola(missatgeEntrada) {
+    // mostrem missatges per la consola
     console.log(missatgeEntrada);
     console.log(i);
 
@@ -12,7 +14,6 @@ function hola(missatgeEntrada) {
     document.getElementById("paragraf2").innerHTML += missatgeEntrada;
     // Cada cop que s'executa aquesta línia, AFEGEIX al contingut
     // de "paragraf"
-
 
     i++;
 }
