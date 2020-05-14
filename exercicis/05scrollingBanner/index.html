@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Banner</title>
+    <style>
+        #divhead {
+            background-color: gray;
+            height: 50px;
+            width: 150px;
+            text-align: center;
+            color: white;
+            font-size: 20;
+        }
+    </style>
+    <script>
+        function helpyou() {
+            tpos = document.scrollTop
+            document.getElementById('divhead').style.position = "absolute"
+            document.getElementById('divhead').style.top = tpos+300
+        }
+
+        function tohid() {
+            document.getElementById('parag').style.visibility = "hidden"
+        }
+    </script>
+</head>
+<body onscroll="helpyou()">
+    <div id="divcontainer">
+        <div id="divhead">
+            <p id="parag" onclick="tohid()">May I Help You</p>
+        </div>
+        Full page content
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        asdasd
+    </div>
+    
+</body>
+</html>

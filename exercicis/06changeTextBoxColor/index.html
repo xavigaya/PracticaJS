@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Box Color If Blank Text Submitted</title>
+    <script>
+        function funup(val) {
+            if (val.length > 0) document.getElementById('t1').style.borderColor="silver"
+        }
+
+        function fun1() {
+            txt = document.getElementById('t1').value 
+            if (txt.length == 0) document.getElementById('t1').style.borderColor = "red" 
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" onkeyup="funup(this.value)">
+    <input type="button" value="Submit" onclick="fun1()">
+</body>
+</html>

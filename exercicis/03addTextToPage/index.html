@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Text To a Particular Division in the Page</title>
+    <script>
+        function add1() {
+            document.getElementById('div1').innerHTML = document.getElementById('t1').value;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="t1">
+    <br>
+    <input type="button" value="Click" onclick="add1()">
+    <div id="div1"></div>
+</body>
+</html>
